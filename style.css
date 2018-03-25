@@ -1,0 +1,630 @@
+
+.poz
+{
+color:#005E68;
+}
+#top {
+display: inline-block;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	padding: 10px 20px;
+  bottom: 0;
+  cursor: pointer;
+  font-size: 120%;
+  position: fixed;
+  right:0 ;
+  color:#005E68;
+  border: 1px solid #005E68;
+ border-radius: 2px;
+}
+html, body
+{
+	height: 100%;
+}
+
+.pozvoni{/* ссылка связаться с нами-с текстом */
+position: absolute; 
+    bottom: -1430px;
+ right: 650px; 
+text-decoration: none;
+
+color: #000;
+}
+.anketa/* форма для заполнения */
+{
+	
+position: absolute; 
+    bottom: -100px; /* Положение от нижнего края */
+    right: 300px; 
+	
+line-height: normal;
+}
+.knopka
+{
+
+
+position: absolute; 
+    bottom: -950px; /* Положение от нижнего края */
+    right: 620px; 
+	background:#FFFFFF;
+	margin-right: 10px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	line-height: normal;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+	font-size: 1em;
+	font-weight: 400;
+	border: 1px solid #B75F68;
+	color: #B75F68;
+}
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+	color: #000000;
+}
+
+h1, h2
+{
+	margin: 0;
+	padding: 0;
+	color:#005E68;
+}
+h3
+{
+	margin: 10;
+	padding: 0;
+	color:#005E68;
+}
+p, ol, ul
+{
+	margin-top: 0px;
+}
+
+p
+{
+	line-height: 200%;
+}
+
+strong
+
+
+.button-style
+{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	line-height: normal;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+	font-size: 1em;
+	font-weight: 400;
+	border: 1px solid #B75F68;
+	color: #B75F68;
+}
+
+
+ul.style3
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style: none;
+	color: #005E68
+}
+
+ul.style3 li
+{
+	padding: 0px 0px 10px 0px;
+	margin: 0 0 1em 0;
+}
+
+ul.style3 p
+{
+	margin: 0;
+}
+
+ul.style3 a
+{
+	display: block;
+	text-decoration: none;
+	color: #005E68;
+}
+
+ul.style3 a:hover
+{
+	text-decoration: underline;
+}
+
+ul.style3 h3
+{
+	padding: 8px 0em 5px 0em;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 700;
+	color: #005E68;
+}
+
+
+ul.style3 .date
+{
+	float: left;
+	position: relative;
+	width: 60px;
+	height: 54px;
+	margin: 0em 1.5em 0em 0em;
+	padding: 8px 0em 0em 0em;
+	background: #B75F68;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	border: 1px solid #CA3F4C;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+	font-size: 1em;
+	font-weight: 400;
+	color: #FFF;
+}
+
+ul.style3 .date:after
+{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+}
+
+ul.style3 .date b
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-top: -5px;
+	font-size: 1.8em;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+
+ul.style3 .date a
+{
+	color: #FFFFFF !important;
+}
+
+ul.style3 .date a:hover
+{
+	text-decoration: none;
+}
+
+	ul.style5
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+		ul.style5 li
+		{
+			clear: both;
+			border-top: 1px solid #8EBEAE;
+		}
+
+		ul.style5 span
+		{
+			padding: 1em 0em;
+			line-height: 1.75em;
+		}
+
+		ul.style5 .address
+		{
+			float: left;
+			width: 80px;
+			display: inline-block;
+			font-weight: 600;
+		}
+
+		ul.style5 .address-01
+		{
+			float: left;
+			display: inline-block;
+		}
+
+		ul.style5 .mail
+		{
+			float: left;
+			width: 80px;
+			display: inline-block;
+			font-weight: 600;
+		}
+
+		ul.style5 .mail-01
+		{
+			display: inline-block;
+		}
+
+		ul.style5 .phone
+		{
+			float: left;
+			width: 80px;
+			display: inline-block;
+			font-weight: 600;
+		}
+
+		ul.style5 .phone-01
+		{
+			float: left;
+			display: inline-block;
+		}
+
+		ul.style5 .first
+		{
+			padding-top: 0em !important!;
+			border-top: none;
+		}
+		
+		
+/** фон */
+
+/**#fon Отображается только область внутри элемента, остальное будет скрыто.Фоновое изображение повторяется по горизонтали и вертикали.*
+{
+	overflow: hidden;
+	background: url(images/bg01.png) repeat;
+}*/
+
+#bloki
+{
+	margin-top: 30px;/**Отступ от нижнего края элемента,насколько виден фон*/
+	padding-bottom: 100px;/**Поле снизу от текста*/
+	background: #FFF;
+	box-shadow: 0px 10px 0px rgba(0,0,0,0.03), 0px -10px 0px rgba(0,0,0,0.03); /**тень у блоков*/
+}
+
+.container
+{
+	width: 1200px;
+
+	margin: 0px auto;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+.imgblock /**подпись на фото*/
+{
+    position: relative;
+    display: inline-block;
+	margin-left: 100px ;
+}
+.letter
+{
+position: absolute; 
+    bottom: -950px; /* Положение от нижнего края */
+    right: 620px; 
+
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	line-height: normal;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	font-size: 1em;
+	font-weight: 600;
+	color: #005E68;
+}
+
+.imgblock span
+ {
+    color: #fff;
+    position: absolute;
+    bottom: -250px;
+    font-size: 62px;
+  
+}
+
+/** LOGO */
+
+#logo
+{
+	float: left;/** выравнивание по левому краю */
+	width: 300;
+}
+
+#logo h1 a/**вторая часть лого*/
+{
+	display: block;
+	line-height: 100px; /**расстояние между строк*/
+	
+	text-decoration: none;/**чтобы был не подчеркнут*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	color: #3E3E3E; /**серая половина*/
+}
+
+#logo span
+{
+	color: #005E68;
+}
+
+/** MENU */
+
+#menu
+{
+	float: right;
+	width: 900px;
+}
+
+#menu ul
+{
+	float: right;
+	margin: 0px;
+	padding: 40px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li
+{
+	float: left;
+	border-left: 1px solid #E7E7E7;/**серые полоски*/
+}
+
+#menu a
+{
+	display: block;
+	padding: 10px 20px; /**поле слева от текста*/
+	margin: 0em 1em;/**Отступ от левого края элемента*/
+	letter-spacing: 2px; /**между строк*/
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-regular;
+	font-size: 1.10em;
+	font-weight: 600;
+	color: #005E68;
+}
+
+
+
+#menu .active a:hover
+{
+
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	border: 1px solid #B75F68;
+	color: #005E68;
+}
+
+
+
+#menu a:hover
+{
+	text-decoration: none;
+}
+
+/** PAGE */
+
+#page
+{
+}
+
+/** CONTENT */
+
+#content
+{
+}
+
+/** SIDEBAR */
+
+#sidebar
+{
+}
+
+/* Footer */
+
+#footer-content
+{
+	overflow: hidden;
+	padding: 70px 0px 50px 0px;
+	color: #515151;
+}
+
+#footer-content a
+{
+	color: #515151;
+}
+
+#footer-content h2
+{
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	color: #515151;
+}
+
+#footer-content #fbox1
+{
+	float: left;
+	width: 384px;
+	margin-right: 24px;
+}
+
+#footer-content #fbox2
+{
+	float: left;
+	width: 446px;
+	padding: 0px 20px;
+}
+
+#footer-content #fbox3
+{
+	float: right;
+	width: 282px;
+}
+
+#footer
+{
+	overflow: hidden;
+	padding: 30px 0px;
+	box-shadow: 0px -10px 0px rgba(0,0,0,0.03);
+}
+
+#footer p
+{
+	text-align: center;
+	color: #767676;
+}
+
+#footer a
+{
+	color: #5f5f5f;
+}
+
+#banner
+{
+	padding: 0px 0px;
+}
+
+/* Three Column Content */
+
+#three-column
+{
+	overflow: hidden;
+
+}
+
+#three-column header
+{
+	letter-spacing: -1px;/* между букв */
+	text-transform: uppercase;/* все прописные */
+	margin-bottom: 2em;/* отступ от текста до картинки */
+	font-size: 1.5em;
+}
+
+#three-column .tbox1 h2, #three-column .tbox2 h2, #three-column .tbox3 h2
+{
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	color: #005E68;
+}
+
+#three-column .tbox1
+{
+	float: center;
+	width: 384px;
+	margin-right: 24px;
+}
+
+#three-column .tbox2
+{
+	float: left;
+	width: 384px;
+}
+
+#three-column .tbox3
+{
+	float: right;
+	width: 384px;
+}
+#main {/* слайдер */
+position: absolute; 
+    bottom: -1400px; /* Положение от нижнего края */
+    right: 390px; 
+	margin: 100px auto;
+	padding: 5px;
+	width: 660px;
+	height:360px;
+}
+#scr {/* слайдер */
+	margin:20px auto;
+	width: 700px;
+	height: 400px;
+	margin-top:20px;
+	background-color: white;
+	background-size:cover;
+	border: 1px solid #005E68;
+	border-radius:5px;
+}
+#easy_zoom{/* увеличение изображения */
+
+	width:900px; /* ширина увеличенного изображения */
+	height:500px; /* высота увеличенного изображения */	
+	border:5px solid #eee; /* рамка вокруг увеличенного изображения  */
+	background:#fff;
+	color:#333;
+	position:absolute;
+	top:300px; /* расстояние от верхнего края страницы */
+	left:400px; /* расстояние от левого края страницы */
+	overflow:hidden;
+	-moz-box-shadow:0 0 10px #777;
+	-webkit-box-shadow:0 0 10px #777;
+	box-shadow:0 0 10px #777;
+	line-height:400px;
+	text-align:center;
+	FONT-SIZE:10pt;
+	margin:0px
+	}
+
+
+	
+	/*форма на экран */
+    .link {color:#fff; text-decoration:none}
+    .link:hover {color:#fff; text-decoration:underline}  
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+    }
+#boxes .window {
+    position:absolute;
+  
+   bottom: -200px;
+   
+    width:400px;
+    height:800px;
+    display:none;
+    z-index:9999;
+    padding: 60px;
+    overflow: hidden;
+    }  
+#boxes #dialog {
+    width:350px; 
+    height:203px;
+    padding:10px;
+    background-color:#ffffff;
+    }  
+.top {
+    position:absolute;
+    left:0;
+    top:0;
+    width:370px;
+    height:30px;
+    background: #005E68;
+    padding: 8px 20px 6px 10px;
+    }
+
+.content {
+    padding-top: 35px;
+}
+.forma
+{
+text-transform: uppercase;
+color:  #005E68;
+}
+.forma:hover {color:  #005E68; text-decoration:underline}  

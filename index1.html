@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html >
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>САЙТ-ВИЗИТКА</title>
+<meta name="keywords" content="визитка" />
+<meta name="description" content="что-то о визитке" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript"><!--дата и время функцию генерирования текущего времени и даты clock() -->
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()<!--месяц текущий возвращаем -->
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+"июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = day + " " + month[month_num] + " " + d.getFullYear()+ "." + "  " <!--getFullYear Возвращает четырехзначное число текущего года-->
++ hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+</head>
+<span id="doc_time">
+ Дата и время
+ </span>
+<body>
+
+<script type="text/javascript">
+ clock();
+</script>
+	<div id="bloki">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#"><span>En</span>Joy</a></h1>
+			</div>
+			<div id="menu">
+			
+				<ul>
+					<li class="active">
+                                         <a href="ввв1.html">Маршруты</a></li>
+                                    <li class="active">
+
+                                         <a href="ввв2.html">Галерея</a></li>
+										 <li class="active">
+                                         <a href="ввв3.html">Горящие туры</a></li>
+										 <li class="active">
+                                         <a href="#4">О компании</a></li>
+										 <li class="active">
+                                         <a href="#5">Контакты</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+		<div class='imgblock'>
+
+<span>Путешествие на край земли</span>
+
+</div>
+
+		<div id="banner" > <img src="images/мост.jpg" width="1400" height="500" alt="" /> </div>
+		<div id="three-column" class="container">
+			<header>
+				<h2>ВЫБЕРИ СВОЙ МАРШРУТ!</h2>
+			</header>
+			<div class="tbox1">
+			
+				<div class="box-style box-style01">
+					<div class="content"> <a href="#" class="image image-full"><img src="images/лес.jpg" alt=""></a>
+						<h2>ЛЫЖНЫЙ ТУРИЗМ</h2>
+						<p>В условиях лыжного похода турист длительное время находится на чистейшем морозном воздухе. Красота зимней природы, быстрая смена впечатлений, общение с коллективом туристов — все это дает большой заряд положительных эмоций... </p>
+						<a href="" class="button-style">Подробнее</a> </div>
+				</div>
+			</div>
+			<div class="tbox2">
+				<div class="box-style box-style02">
+					<div class="content"> <a href="#" class="image image-full"><img src="images/море.jpg" alt=""></a>
+						<h2>КРУИЗНЫЙ ТУРИЗМ</h2>
+						<p>Совершить захватывающее путешествие в любую, даже самую отдаленную точку земного шара стало возможно.  Отправляясь в путешествие на лайнере, вы посетите несколько городов, стран и даже континентов, насладитесь разнообразием береговых экскурсий... </p>
+						<a href="#" class="button-style">Подробнее</a> </div>
+				</div>
+			</div>
+			<div class="tbox3">
+				<div class="box-style box-style03">
+					<div class="content"> <a href="#" class="image image-full"><img src="images/горы.jpg" alt=""></a>
+						<h2>ГОРНЫЙ ТУРИЗМ</h2>
+						<p>Преодолевать пешком ледники, пологие и крутые склоны, перевалы — полезно для здоровья, доступно, познавательно.Самыми популярными центрами горного туризма в мире являются Альпы, Гималаи, Тибет, Кавказ, Памир и Аргентинские Анды...</p>
+						<a href="#" class="button-style" >Подробнее</a> </div>
+				</div>
+			</div>
+		</div>
+		<div id="page">
+			<div id="content"></div>
+			<div id="sidebar"></div>
+		</div>
+	</div>
+	<div id="footer-content" class="container">
+		<div id="fbox1">
+			<h2>ВАЖНЫЕ ДАТЫ</h2>
+			<ul class="style3">
+				<li class="first">
+					<p class="date"><a href="#">Март<b>20</b></a></p>
+					<h3>Кругосветное путешествие</h3>
+					<p><a href="#">Оставить заявку</a></p>
+				</li>
+				<li>
+					<p class="date"><a href="#">Апрель<b>18</b></a></p>
+					<h3>Восхождение в горы</h3>
+					<p><a href="#">Оставить заявку</a></p>
+				</li>
+				<li>
+					<p class="date"><a href="#">Май<b>15</b></a></p>
+					<h3>Ночная поездка по серпантину</h3>
+					<p><a href="#">Оставить заявку</a></p>
+				</li>
+				<li>
+			</ul>
+		</div>
+		<div id="fbox2">
+			<h2 id="4">О компании</h2>
+			<p><strong></strong>В туристической компании работают настоящие профессионалы своего дела, все менеджеры имеют многолетний опыт работы в туризме – это грамотные, инициативные и доброжелательные люди, благодаря чему работать с нашей компанией Выгодно, Надежно и Приятно. Это позволило иметь достаточно большое количество партнеров в разных регионах Российской Федерации и достойно зарекомендовать себя на рынке туристских услуг. </p>
+			<a href="#" class="button-style">Заказать звонок</a> </div>
+		<div id="fbox3">
+			<h2 id="5">Контакты</h2>
+			<p>С нами можно связаться</p>
+			<ul class="style5">
+				<li class="first"><span class="address">Адрес</span> <span class="address-01">г.Москва, ул.Черкова, д.5<br />
+					</span> </li>
+				<li> <span class="mail">Е-Mail</span> <span class="mail-01"><a href="#">enjoy@mail.ru</a></span> </li>
+				<li> <span class="phone">Телефон</span> <span class="phone-01">849441256325</span> </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p>© 2018 «EnJoy». Копирование материалов без согласия запрещено</a>.</p>
+</div>
+
+
+</body>
+</html>

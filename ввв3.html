@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+  <!-- форма на экран -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+$(document).ready(function() {   
+    $('a[name=modal]').click(function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href');
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    $('#mask').fadeIn(1000); 
+    $('#mask').fadeTo("slow",0.8); 
+    var winH = $(window).height();
+    var winW = $(window).width();
+    $(id).css('top',  winH/2-$(id).height()/2);
+    $(id).css('left', winW/2-$(id).width()/2);
+    $(id).fadeIn(2000); 
+    });
+    $('.window .close').click(function (e) { 
+    e.preventDefault();
+    $('#mask, .window').hide();
+    }); 
+    $('#mask').click(function () {
+    $(this).hide();
+    $('.window').hide();
+    }); 
+   });  
+</script>
+
+<script>
+  <!-- форма для заполнения -->
+        function Complete()
+        {
+            var Elem="Фамилия: " + document.Sel1.Family.value +
+                "\nИмя: " + document.Sel1.Name.value +
+                "\nВозраст: " + document.Sel1.Age.value +
+                "\nТелефон: " + document.Sel1.Phone.value;
+            alert(Elem);
+        }
+        function CheckAge(age)
+        {
+            if(age<18)
+                return "18";
+            else
+                return  age;
+        }
+       
+    </script>
+<!-- увеличение картинки при наведении -->
+<script type="text/javascript" src="https://programki.by/js/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://programki.by/js/js4/easyzoom.js"></script>
+<script type="text/javascript">	
+jQuery(function($){	
+	$('a.zoom').easyZoom();
+});
+</script>
+<link href="https://programki.by/js/js4/default.css" rel="stylesheet" type="text/css" media="all" />
+<title>Горящие туры</title>
+
+<link href="bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body style=" font-family:verdana; font-size:15px;">
+  <!-- форма для заполнения -->
+  <div class='anketa'>
+<H2>Заполните анкету</H2>
+<FORM NAME="Sel1">
+    <!-- Анкета -->
+    <TABLE>
+        <TR><TD><B>Фамилия:<B></TD>
+            <TD><INPUT NAME="Family" SIZE=20
+                  onBlur="this.value=this.value.toUpperCase()"></TD></TR>
+        <TR><TD><B>Имя:<B></TD>
+            <TD><INPUT NAME="Name" SIZE=20
+                  onBlur="this.value=this.value.toUpperCase()"></TD></TR>
+        <TR><TD><B>Возраст:<B></TD>
+            <TD><INPUT NAME="Age" SIZE=3 VALUE="18"
+                  onBlur="this.value=CheckAge(this.value)"
+                  onFocus="this.select()"></TD></TR>
+        <TR><TD><B>Телефон:<B></TD>
+            <TD><INPUT NAME="Phone" SIZE=10></TD></TR>
+    </TABLE>
+    <!-- Кнопки готовности и сброса -->
+    <INPUT TYPE="button" VALUE="Готово" onClick="Complete();">
+    <INPUT TYPE="reset" VALUE="Сброс">
+</FORM>
+</div>
+		<div class='imgblock'>
+<span>Горящие туры</span>
+</div>
+<a href="#" onclick="history.back();"><img src="лого.jpg" width="80"  height="40"></a>
+<img src="15.jpg" width="1400"  height="300">
+<!--<button type="button" style="color:#FFFFFF;float: center;background: #005E68;border: 1px solid #005E68;"class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Узнать цену
+</button>-->
+
+<div id="three-column" class="container">
+			<header>
+				<h3></h3>
+			</header>
+
+		</div>
+<div id="three-column" class="container">
+
+			<div class="tbox1">
+			
+				<div class="box-style box-style01">
+					<div class="content"> <a href="#" class="image image-full"><img src="images/16.jpg" alt=""></a>
+						<h2>Греция</h2>
+<!-- увеличение картинки при наведении -->
+<p><a href="C:\Users\Ксения\Desktop\Сайт\177.jpg" class="zoom"><img src="C:\Users\Ксения\Desktop\Сайт\17.jpg" alt="Город"></a></p>
+<!--/ увеличение картинки при наведении -->
+
+
+<a href="#dialog" name="modal" class="forma">Оставить заявку</a>
+
+<!-- Само окно -->
+<div id="boxes">  
+<div id="dialog" class="window"> 
+<div class="top"><a href="#" class="link close"/>Закрыть</a></div>
+<div class="content">Заявка принята,Вам позвонят.</div>
+</div>
+</div>
+<!-- Маска, затемняющая фон -->
+<div id="mask"></div>
+
+
+
+
+</body>
+</html>

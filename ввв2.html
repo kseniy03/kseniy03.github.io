@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<script language="javascript"><!--кнопка -->
+var default_color;
+function mouseIn() {
+  default_color = document.changecolorbutton.but.style.background;
+  document.changecolorbutton.but.style.background = "#005E68";
+}
+function mouseOut() {
+  document.changecolorbutton.but.style.background = default_color;
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<title>Галерея</title>
+
+</head>
+<body>
+<form name = "changecolorbutton">
+  <input type="button" class="knopka" name="but" value="Показать ещё" onMouseOver="mouseIn()" onMouseOut="mouseOut()">
+</form> 
+		<div class='imgblock'>
+<span>Галерея 
+</span>
+</div>
+<a href="#" onclick="history.back();"><img src="лого.jpg" width="80"  height="40"></a>
+<img src="12.jpg" width="1400"  height="300">
+<div id="three-column" class="container">
+			<header>
+				<h3> САМЫЕ ЯРКИЕ МОМЕНТЫ</h3>
+			</header>
+			<p>
+<div style="float:left; margin:10px;"><img src="8.jpg" width="550" height="300"><br /><h2>Серфинг на волнах</h2></div>
+<div style="float:left; margin:10px;"><img src="9.jpg"width="550" height="300"><br /><h2>Спуски на сноубордах</h2></div>
+<div style="float:left; margin:10px;"><img src="10.jpg"width="550" height="300"><br /><h2>Восхождение в горы</h2></div>
+<div style="float:left; margin:10px;"><img src="11.jpg"width="550" height="300"><br /><h2>Гонки по бездорожью</h2></div>
+<div style="float:left; margin:10px;"><img src="13.jpg"width="550" height="300"><br /><h2>Озеро Байкал</h2></div>
+<div style="float:left; margin:10px;"><img src="14.jpg"width="550" height="300"><br /><h2>Канатная дорога</h2></div>
+</p>
+		</div>
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html>
+<head>
+
+<!--Сылка связаться с текстом -->
+<script src="C:\Users\Ксения\Desktop\Сайт/jquery-1.4.3.js" type="text/javascript"></script>
+<div class='pozvoni'>
+<a name="downlist" class='poz'  href="javascript:void(0);">Свяжитесь с нами</a>
+<div id="downlist" style="display:none">
+<p>Адрес: г.Москва, ул.Черкова, д.5      Телефон: 84945856956      E-mail:enjoy@mail.ru</p>
+</div></div>
+<script type="text/javascript">
+$('a[name=downlist]').click(function(){
+    $('#downlist').slideToggle(600);
+});
+
+</script>
+
+
+<!--наверх -->
+<script type="text/javascript">
+  var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+  var delay = 1000; // Задержка прокрутки
+  $(document).ready(function() {
+    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+      /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+      if ($(this).scrollTop() > top_show) $('#top').fadeIn();
+      else $('#top').fadeOut();
+    });
+    $('#top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+      /* Плавная прокрутка наверх */
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
+  });
+</script>
+
+
+
+
+<script>
+var slider = {<!--слайдер -->
+	slides:['22.jpg','33.jpg','44.jpg','55.jpg','66.jpg','77.jpg'],
+	frame:0, // текущий кадр для отбражения - индекс картинки из массива
+	set: function(image) { // установка нужного фона слайдеру
+		document.getElementById("scr").style.backgroundImage = "url("+image+")";
+	},
+	init: function() { // запуск слайдера с картинкой с нулевым индексом
+		this.set(this.slides[this.frame]);
+	},
+	left: function() { // крутим на один кадр влево,при стрелках-убрала
+		this.frame--;
+		if(this.frame < 0) this.frame = this.slides.length-1;
+		this.set(this.slides[this.frame]);
+	},
+	right: function() { // крутим на один кадр вправо
+		this.frame++;
+		if(this.frame == this.slides.length) this.frame = 0;
+		this.set(this.slides[this.frame]);		
+	}
+};
+window.onload = function() { // запуск слайдера после загрузки документа
+	slider.init();
+	setInterval(function() { // ставим четыре секунды интервал для перелистывания картинок
+		slider.right();
+	},4000);
+};
+</script>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<title>Маршруты</title>
+</head>
+<body>
+
+<div id="top">Наверх</div>
+
+<div id="main">
+
+	<div id="scr"></div>
+
+</div>	
+		<div class='imgblock'>
+<span>Маршруты</span>
+</div>
+<a href="#" onclick="history.back();"><img src="лого.jpg" width="80"  height="40"></a>
+<img src="1.jpg" width="1400"  height="300">
+<div id="three-column" class="container">
+			<header>
+				<h3> ЛЮБОЙ МАРШРУТ НА ВАШ ВКУС!</h3>
+			</header>
+			<p>
+<div style="float:left; margin:10px;"><img src="2.jpg" width="550" height="300"><br /><h2>МАРШРУТ №1</h2></div>
+<div style="float:left; margin:10px;"><img src="3.jpg"width="550" height="300"><br /><h2>МАРШРУТ №2</h2></div>
+<div style="float:left; margin:10px;"><img src="4.jpg"width="550" height="300"><br /><h2>МАРШРУТ №3</h2></div>
+<div style="float:left; margin:10px;"><img src="5.jpg"width="550" height="300"><br /><h2>МАРШРУТ №4</h2></div>
+<div style="float:left; margin:10px;"><img src="6.jpg"width="550" height="300"><br /><h2>МАРШРУТ №5</h2></div>
+<div style="float:left; margin:10px;"><img src="7.jpg"width="550" height="300"><br /><h2>МАРШРУТ №6</h2></div>
+</p>
+	
+<span class="letter">Смотреть все маршруты >></span>
+
+		</div>
+
+
+</body>
+</html>
